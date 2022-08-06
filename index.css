@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.main-div {
+  padding: 2rem 4rem;
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+nav img {
+  width: 7rem;
+}
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  color: #1e004b;
+  z-index: 2;
+}
+.nav-item {
+  position: relative;
+  padding-bottom: 0.1rem;
+  cursor: pointer;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #1e004b;
+  transition: all 0.3s ease-in-out;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.signin-btn,
+.learn-more-btn {
+  width: max-content;
+  padding: 0.3rem 1rem;
+  border-radius: 100vh;
+  color: #fff;
+  background: linear-gradient(to right, #a66aff, #ff71d5);
+  border: inherit;
+  transition: background 0.5s ease-in-out;
+  z-index: 2;
+}
+.learn-more-btn {
+  font-size: 1.5rem;
+}
+.signin-btn:hover,
+.learn-more-btn:hover {
+  background: linear-gradient(to right, #ff71d5, #a66aff);
+  cursor: pointer;
+}
+.intro-section {
+  display: flex;
+  padding: 5rem 0;
+}
+.left-section {
+  width: 40%;
+}
+.left-section h1 {
+  font-size: 4rem;
+  color: #2f0075;
+  font-weight: 700;
+}
+.left-section h4 {
+  font-size: 0.8rem;
+  color: #140031a6;
+  padding: 4rem 0;
+  width: 50%;
+}
+.imgs-div {
+  position: relative;
+}
+.imgs-div img:last-child {
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  height: 500px;
+}
+.vector-img {
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+.vector-dot {
+  position: absolute;
+  top: 80%;
+  left: 3rem;
+}
+.backcover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90vh;
+}
